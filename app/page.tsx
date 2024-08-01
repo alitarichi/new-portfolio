@@ -1,3 +1,4 @@
+import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 
@@ -14,10 +15,10 @@ export default function Home() {
             { name: "About", link: "/" },
             { name: "Projects", link: "/" },
             { name: "Testimonials", link: "/" },
-            { name: "Contact", link: "/" },
           ]}
         />
         <Hero />
+        <Grid />
       </div>
     </main>
   );
