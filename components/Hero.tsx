@@ -1,6 +1,11 @@
+"use client";
+
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
-import { TextGenerateEffect } from "./ui/text-generate-effect";
+import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import ShimmerButton from "./ui/ShimmerButton";
+import { AiOutlineMessage } from "react-icons/ai";
+import { FaLocationArrow } from "react-icons/fa";
 
 const Hero = () => {
   return (
@@ -47,6 +52,14 @@ const Hero = () => {
           <p className="text-center tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
             Hi, I&apos;m Ali, A Full Stack Web Developer
           </p>
+
+          <a href="#Contact">
+            <ShimmerButton
+              title="Contact Me!"
+              icon={<AiOutlineMessage className="" />}
+              position="right"
+            />
+          </a>
         </div>
       </div>
     </div>
