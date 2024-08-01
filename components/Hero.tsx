@@ -45,18 +45,22 @@ const Hero = () => {
             Dynamic Web Magic with NextJs
           </h2>
           <TextGenerateEffect
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
-            words="Transforming Concepts into Seamless 
+            className=" text-center text-2xl md:text-5xl lg:text-6xl"
+            words="Transforming Concepts into Seamless User 
           Experiences"
           />
-          <p className="text-center tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+          <p
+            className=" text-center tracking-wider mb-4 text-sm
+           md:text-lg lg:text-2xl"
+          >
             Hi, I&apos;m Ali, A Full Stack Web Developer
           </p>
 
           <a href="#Contact">
             <ShimmerButton
+              otherClasses="hover:text-white"
               title="Contact Me!"
-              icon={<AiOutlineMessage className="" />}
+              icon={<AiOutlineMessage />}
               position="right"
             />
           </a>
