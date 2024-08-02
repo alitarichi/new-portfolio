@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./BackgroundGradientAnimation";
-import { Globe } from "./Globe";
-import GridGlobe from "./GridGlobe";
+import { div } from "three/webgpu";
+import { TechStack } from "@/data";
 
 export const BentoGrid = ({
   className,
@@ -44,7 +44,7 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        " relative row-span-1 rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:border-white/[0.2] bg-white border border-transparent justify-between flex flex-col space-y-4",
+        " row-span-1 relative overflow-hidden rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:border-white/[0.2] bg-white border border-transparent justify-between flex flex-col space-y-4",
         className
       )}
       style={{
@@ -97,8 +97,22 @@ export const BentoGridItem = ({
           <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z10 ">
             {title}
           </div>
+
+          {id === 3 && (
+            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
+              <div className="flex flex-col gap-3 lg:gap-8">
+                {TechStack.map((item) => (
+                  <span
+                    key={item}
+                    className="py-2 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg bg-[#10132E]"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
-        {id === 2 && <GridGlobe />}
       </div>
     </div>
   );

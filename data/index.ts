@@ -215,3 +215,5 @@ export const socialMedia = [
     img: "/link.svg",
   },
 ];
+
+export const TechStack = ["React.js", "Next.js", "Typescript"];
