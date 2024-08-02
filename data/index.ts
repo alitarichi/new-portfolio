@@ -216,4 +216,6 @@ export const socialMedia = [
   },
 ];
 
-export const TechStack = ["React.js", "Next.js", "Typescript"];
+export const TechStack = ["React", "NextJs", "Typescript"];
+
+export const TechStack2 = ["Javascript", "MongoDB", "React Native"];
