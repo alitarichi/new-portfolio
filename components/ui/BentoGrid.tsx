@@ -88,7 +88,7 @@ export const BentoGridItem = ({
         <div
           className={cn(
             titleClassName,
-            "gropu-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
+            "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
           )}
         >
           <div className="font-sans font-extralight text-[#C1C2D3] text-sm md:text-xs lg:text-base z-10">
@@ -109,6 +109,7 @@ export const BentoGridItem = ({
                     {item}
                   </span>
                 ))}
+                <span className="py-4 px-3 rounded-lg text-center bg-[#10132E]" />
               </div>
             </div>
           )}
