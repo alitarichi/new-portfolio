@@ -8,6 +8,7 @@ import { useState } from "react";
 import animationData from "@/data/confetti.json";
 import ShimmerButton from "./ShimmerButton";
 import { IoCopyOutline } from "react-icons/io5";
+import MagicButton from "../MagicButton";
 
 export const BentoGrid = ({
   className,
@@ -163,7 +164,7 @@ export const BentoGridItem = ({
                 <Lottie options={defaultOptions} height={200} width={400} />
               </div>
 
-              <ShimmerButton
+              <MagicButton
                 title={copied ? "Email is Copied!" : "Copy my email address"}
                 icon={<IoCopyOutline />}
                 position="left"
