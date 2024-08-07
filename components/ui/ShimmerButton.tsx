@@ -15,6 +15,7 @@ const ShimmerButton = ({
 }) => {
   return (
     <button
+      onClick={handleClick}
       className={`"inline-flex justify-center items-center h-12 w-full cursor-pointer animate-shimmer 
     rounded-lg border border-slate-800 
     bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] 
