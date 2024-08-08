@@ -20,7 +20,7 @@ const RecentProjects = () => {
             className="lg:min-h-[32.5rem] h-[25rem] flex 
           items-center justify-center sm:w-96 w-[80vw] "
           >
-            <PinContainer title={title} href={link}>
+            <PinContainer title={link} href={link}>
               <div
                 className="relative flex items-center justify-center sm:w-96 w-[80vw]
               overflow-hidden h-[20vh] lg:h-[30vh]"
@@ -51,8 +51,10 @@ const RecentProjects = () => {
                     </div>
                   ))}
                 </div>
-                <div>
-                  <p>Check Live Site</p>
+                <div className="flex justify-center items-center">
+                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
+                    Check Live Site
+                  </p>
                   <FaLocationArrow className="ms-5" color="#CBACF9" />
                 </div>
               </div>
