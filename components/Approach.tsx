@@ -12,15 +12,11 @@ const Approach = () => {
       </h1>
       <div className="py-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4 mx-auto px-8">
         <Card
-          title="Sheetal is Nisha"
-          icon={
-            <AceternityIcon
-              order="Phase 1"
-              description="We'll collaborate to map out your website's goals,
+          title="Planning & Strategy"
+          icon={<AceternityIcon order="Phase 1" />}
+          description="We'll collaborate to map out your website's goals,
           target audience, and key functionalities. we'll discuss things like
           site structure, navigation, and content requirements."
-            />
-          }
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -28,8 +24,11 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Planning & Strate"
+          title="Development & Progress Update"
           icon={<AceternityIcon order="Phase 2" />}
+          description="Once we agree on the plan,
+            I cue my playlist and divr into coding. From inital sketches to polished 
+            code, I keep you updated every step of the way."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -43,7 +42,13 @@ const Approach = () => {
           {/* Radial gradient for the cute fade */}
           <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
         </Card>
-        <Card title="Munni is Aditi" icon={<AceternityIcon order="Phase 3" />}>
+        <Card
+          title="Testing & Lunch"
+          icon={<AceternityIcon order="Phase 3" />}
+          description="This is where the Magic happens! Based on the approved 
+        design, I'll translate everything into functional code, building your
+        website from the ground up"
+        >
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-sky-600"
