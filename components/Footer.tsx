@@ -33,7 +33,7 @@ const Footer = () => {
           />
         </a>
       </div>
-      <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
+      <div className="gap-2 flex mt-16 md:flex-row flex-col justify-between items-center">
         <p className="md:text-base text-sm md:text-normal font-light">
           Copyright © 2024 Ali Tarichi
         </p>
